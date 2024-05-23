@@ -1,3 +1,11 @@
+# Get data
+import urllib.request # urllib.request for opening and reading URLs
+# single file download -- Upper Bay 2016 (8574728 Francis Scott Key Bridge)
+urllib.request.urlretrieve('https://www.ndbc.noaa.gov/view_text_file.php?filename=fskm2h2016.txt.gz&dir=data/historical/stdmet/','fskm2h2016.csv')
+# single file download -- Upper Bay 2018 (8574728 Francis Scott Key Bridge)
+urllib.request.urlretrieve('https://www.ndbc.noaa.gov/view_text_file.php?filename=fskm2h2018.txt.gz&dir=data/historical/stdmet/','fskm2h2018.csv')
+
+
 #time series
 import matplotlib.pyplot as plt
 import numpy as np
